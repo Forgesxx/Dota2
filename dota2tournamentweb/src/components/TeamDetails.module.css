@@ -1,0 +1,19 @@
+.teamContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    justify-content: space-between;
+  }
+  
+  .playerDetails {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    flex: 1 1 calc(20% - 10px); /* Adjusting width to fit 5 players in a row */
+    box-sizing: border-box;
+  }
+  

@@ -1,0 +1,10 @@
+.matchOverview {
+    margin-bottom: 20px;
+  }
+  
+  .teamSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  

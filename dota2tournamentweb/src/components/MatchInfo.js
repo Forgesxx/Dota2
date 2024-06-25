@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import MatchDetails from './MatchDetails';
+import styles from './MatchInfo.module.css';
 
 const MatchInfo = ({ matchId }) => {
   const [matchData, setMatchData] = useState(null);
@@ -18,13 +20,13 @@ const MatchInfo = ({ matchId }) => {
       });
   }, [matchId]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
+  if (loading) return <p className={styles.loading}>Loading...</p>;
+  if (error) return <p className={styles.error}>Error: {error.message}</p>;
 
   return (
-    <div>
+    <div className={styles.matchInfoContainer}>
       <h1>Match Info</h1>
-      <pre>{JSON.stringify(matchData, null, 2)}</pre>
+      <MatchDetails matchData={matchData} />
     </div>
   );
 };

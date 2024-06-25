@@ -1,16 +1,15 @@
 import React from 'react';
-import MatchInfo from './components/tests';
-import './App.css';
+import MatchInfo from './components/MatchInfo';
 
-function App() {
+const App = () => {
+  const matchId = '7812854715';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>OpenDota Match Info</h1>
-        <MatchInfo matchId="7812854715" />
-      </header>
+    <div>
+      <h1>Dota 2 Match Info</h1>
+      <MatchInfo matchId={matchId} />
     </div>
   );
-}
+};
 
 export default App;
