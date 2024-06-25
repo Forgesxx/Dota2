@@ -13,7 +13,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
-    flex: 1 1 calc(20% - 10px); /* Adjusting width to fit 5 players in a row */
+    flex: 1 1 calc(10% - 20px); /* Ensuring 5 players fit in a row */
     box-sizing: border-box;
   }
   
