@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import MatchInfo from './components/MatchInfo';
+import MatchInfo from './dotaInfoComponents/MatchInfo';
+import Header from './basicComponents/header'; // Исправленный импорт
 
 const App = () => {
   const [matchId, setMatchId] = useState('');
@@ -15,6 +16,7 @@ const App = () => {
 
   return (
     <div>
+      <Header /> {/* Вывод компонента Header */}
       <h1>Dota 2 Match Info</h1>
       <input
         type="text"
